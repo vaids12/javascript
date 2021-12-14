@@ -2,135 +2,135 @@ console.log("Test")
 
 //Turime šešis atsitiktinius skaičius nuo 1000 iki 9999. Surikiuoti juos didėjimo tvarka.
 
-let a;
-let b;
-let c;
-let d;
-let e;
-let f;
+// let a;
+// let b;
+// let c;
+// let d;
+// let e;
+// let f;
 
-// a = Math.random();
-a= Math.floor(Math.random()*(9999-1000))+1000;
+// // a = Math.random();
+// a= Math.floor(Math.random()*(9999-1000))+1000;
 
-//Math.floor(Math.random()*(9999-1000))+1000;
-console.log(a);
+// //Math.floor(Math.random()*(9999-1000))+1000;
+// console.log(a);
 
-b= Math.floor(Math.random()*(9999-1000))+1000;
-console.log(b);
+// b= Math.floor(Math.random()*(9999-1000))+1000;
+// console.log(b);
 
-c= Math.floor(Math.random()*(9999-1000))+1000;
-console.log(c);
+// c= Math.floor(Math.random()*(9999-1000))+1000;
+// console.log(c);
 
-d= Math.floor(Math.random()*(9999-1000))+1000;
-console.log(d);
+// d= Math.floor(Math.random()*(9999-1000))+1000;
+// console.log(d);
 
-e= Math.floor(Math.random()*(9999-1000))+1000;
-console.log(e);
+// e= Math.floor(Math.random()*(9999-1000))+1000;
+// console.log(e);
 
-f= Math.floor(Math.random()*(9999-1000))+1000;
-console.log(f);
-console.log ("__________________________")
+// f= Math.floor(Math.random()*(9999-1000))+1000;
+// console.log(f);
+// console.log ("__________________________")
 
-// 1 ciklas
+// // 1 ciklas
 
-if(a>b){
-    let x = a;
-    a = b;
-    b = x;
-}
+// if(a>b){
+//     let x = a;
+//     a = b;
+//     b = x;
+// }
 
- if(b>c){
-    let x = b;
-    b = c;
-    c = x;
-}
+//  if(b>c){
+//     let x = b;
+//     b = c;
+//     c = x;
+// }
 
-if(c>d){
-    let x = c;
-    c = d;
-    d = x;
-}
+// if(c>d){
+//     let x = c;
+//     c = d;
+//     d = x;
+// }
 
-if(d>e){
-    let x = d;
-    d = e;
-    e = x;
-}
+// if(d>e){
+//     let x = d;
+//     d = e;
+//     e = x;
+// }
 
-if(e>f){
-    let x = e;
-    e = f;
-    f = x;
-}
-// 2 ciklas
-if(a>b){
-    let x = a;
-    a = b;
-    b = x;
-}
+// if(e>f){
+//     let x = e;
+//     e = f;
+//     f = x;
+// }
+// // 2 ciklas
+// if(a>b){
+//     let x = a;
+//     a = b;
+//     b = x;
+// }
 
- if(b>c){
-    let x = b;
-    b = c;
-    c = x;
-}
+//  if(b>c){
+//     let x = b;
+//     b = c;
+//     c = x;
+// }
 
-if(c>d){
-    let x = c;
-    c = d;
-    d = x;
-}
+// if(c>d){
+//     let x = c;
+//     c = d;
+//     d = x;
+// }
 
-if(d>e){
-    let x = d;
-    d = e;
-    e = x;
-}
-// 3ciklas
-if(a>b){
-    let x = a;
-    a = b;
-    b = x;
-}
+// if(d>e){
+//     let x = d;
+//     d = e;
+//     e = x;
+// }
+// // 3ciklas
+// if(a>b){
+//     let x = a;
+//     a = b;
+//     b = x;
+// }
 
- if(b>c){
-    let x = b;
-    b = c;
-    c = x;
-}
+//  if(b>c){
+//     let x = b;
+//     b = c;
+//     c = x;
+// }
 
-if(c>d){
-    let x = c;
-    c = d;
-    d = x;
-}
-// 4 ciklas
-if(a>b){
-    let x = a;
-    a = b;
-    b = x;
-}
+// if(c>d){
+//     let x = c;
+//     c = d;
+//     d = x;
+// }
+// // 4 ciklas
+// if(a>b){
+//     let x = a;
+//     a = b;
+//     b = x;
+// }
 
- if(b>c){
-    let x = b;
-    b = c;
-    c = x;
-}
-// 5 ciklas
-if(a>b){
-    let x = a;
-    a = b;
-    b = x;
-}
+//  if(b>c){
+//     let x = b;
+//     b = c;
+//     c = x;
+// }
+// // 5 ciklas
+// if(a>b){
+//     let x = a;
+//     a = b;
+//     b = x;
+// }
 
 
-console.log(a, b, c, d, e, f);
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
-console.log(e);
-console.log(f);
+// console.log(a, b, c, d, e, f);
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+// console.log(f);
 
 
 console.log("****************************")
@@ -207,7 +207,7 @@ cars[2] = "Audi";
 console.log(trees);
 console.log(cars);
 cars[2] = "Skoda";
-console.log(cars)
+console.log(cars);
 
 
 let bestCar = cars[2];
@@ -245,7 +245,7 @@ console.log(furniture.join(" | "));
 
 let bed = furniture.pop();
 console.log(furniture);
-console.log(bed)
+console.log(bed);
 
 
 furniture.push("sofa");
@@ -257,5 +257,105 @@ furniture.unshift("spintele");
 
 console.log(furniture.length);// paskutinis indeksas yra 1 mazesnis uz length
 
-delete furniture[2];
+delete furniture[2];// nenaudojam trynimui nes padaro skyles
 console.log(furniture);
+
+furniture.splice(2,0, "lentyna", "lova");// pridedam masyvui
+console.log(furniture);
+
+furniture.splice(4,1);// trinam  masyve
+console.log(furniture);
+
+// Masyvu sujungimas
+
+const smallCities = [
+    "Kedainiai",
+    "Marijampole",
+    "Alytus",
+    "Anyksciai"
+];
+
+const bigCities = [
+    "Vilnius",
+    "Kaunas",
+    "Klaipeda",
+    "Siauliai",
+    "Panevezys"
+];
+
+const cities = bigCities.concat(smallCities); // po kablelio galima daugiau masyvu isvardinti
+
+
+console.log(cities);
+
+const cities2 = cities.concat("Silute");
+console.log(cities2);
+
+const bigThree = cities.slice(0,3);
+console.log(bigThree);
+
+const smallThree = [];
+smallThree.splice(0,0, cities.slice(2,3).toString(), cities.slice(5,6).toString(), cities.slice(8,9).toString());
+
+console.log(smallThree);
+
+cities.sort();
+
+console.log(cities);
+
+cities.reverse();
+console.log(cities);
+
+const numbers = [1,56885855,562,7869];
+numbers.sort();
+console.log(numbers);
+
+// number sort
+numbers.sort(function(a,b){
+    return a - b;// jei mazejimo tvarka , tai b - a
+});
+
+console.log(numbers);
+
+const numbers2 = [12, 56, 89 , 1 , 54 , 999, 478];
+
+let maxNo = parseInt( numbers2.sort(function(a,b){
+    return a-b;
+}).slice(numbers2.length-1).toString());
+
+console.log(maxNo);
+
+function minArray(array){
+    return Math.min.apply(null, array);
+}
+
+let minNo = minArray(numbers2);
+console.log(minNo);
+
+
+function addOne(value, index, array){
+  text += value + "<br>";
+}
+
+let text = "";
+console.log(text);
+numbers2.forEach(addOne);
+document.write(text);
+
+function increased (value, index, array) {
+    return value + 1;
+}
+
+const numbers3 = numbers2.map(increased);
+console.log(numbers3);
+
+function doubleDigits(value, index, array){
+    return value < 100;
+}
+
+const underHundrend = numbers2.filter(doubleDigits);
+
+console.log(underHundrend);
+
+
+
