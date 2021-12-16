@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <link rel="stylesheet" href="./dist/css/style.css">
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <h1 onclick="this.innerHTML = 'Paspausta'"> Spauskite Cia</h1>
+    <h1 id="heading2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur earum illum officiis laborum veniam unde quae libero in autem possimus ex, sed nobis inventore reprehenderit distinctio quod assumenda vel impedit.</h1>
+    <p id="date"></p>
+    <div class="box" onmouseover = "mouseOver(this)" onmouseout="mouseOut(this)">Hover me</div>
+    
+    <a href="#" id="link">Nuoroda</a>
+
+    <form  name="form1" action="" onsubmit="return validateForm()">
+        <input type="text" name="firstName" placeholder="Name">
+        <input type="submit">
+    </form>
+
+<p>Parasykite skaiciu nuo 1 iki 10 </p>
+    <input type="text" id ="number" >
+    <button type="button" onclick="checkNumber()" >Tikrinti</button> <span id= "message"></span>
+
+    <p id = "text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum inventore consectetur sunt distinctio molestiae et labore eveniet autem! Aliquam iusto reprehenderit eveniet. Quos sequi eum maiores nisi pariatur quidem iste?</p>
+
+    <div id = "box2" class="box2"></div>
+    <button onclick="toggleBox()">pakeisti spalva</button>
+   
+    
+    <script src="./dist/js/script.js"></script>
+</body>
+</html>
