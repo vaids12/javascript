@@ -153,4 +153,22 @@ console.log($(".box").css("background-color"));
 
 let color = $(".box").css("background-color");
 
-$("#b1").css({"background-color": color, "width":"50px"});
+$("#b1").css({
+    "background-color": color,
+    "width": "50px"
+});
+
+$(document).ready(function () {
+    $("#boxCssAdd").click(function () {
+        $(".box").addClass("green static");
+        $(".box1").addClass("green static");
+    });
+    $("#boxCssRemove").click(function () {
+        $(".box").removeClass("green static");
+        $(".box1").removeClass("green ");
+    });
+    $("#boxCssToggle").click(function () {
+        $(".box").toggleClass("green static");
+        $(".box1").toggleClass("green static");
+    });
+})
