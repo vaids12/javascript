@@ -54,7 +54,7 @@ $(function () {
 
 $(document).ready(function () {
     $("#title").click(function () {
-        // $("#text").toggle(3000);
+        $("#text").toggle(2000);
         // $("#text").fadeIn();
         //$("#text").fadeOut(5000);
         // $("#text").fadeToggle(3000);
