@@ -50,10 +50,10 @@ $(document).ready(function () {
     //duomenu ivedimas
     $("#submit").click(function (e) {
         e.preventDefault();
-        
+
         let firstName = $("input[name=firstName]").val();
         let email = $("input[name=email]").val();
-        if(!firstName || !email){
+        if (!firstName || !email) {
             return alert("Suveskite duomenis!")
         }
         //console.log( firstName +" , "+ email );
@@ -64,10 +64,10 @@ $(document).ready(function () {
         $("input[name=email]").val("");
         //    console.log(data);
         $("#list").empty();
-            for (let i = 0; i < data.length; i++) {
-                $("#list").append("<li>" + data[i] + "</li>");
-            }
-        
+        for (let i = 0; i < data.length; i++) {
+            $("#list").append("<li>" + data[i] + "</li>");
+        }
+
         // $("#list").append("<li>" + data[data.length - 1] + "</li>");
     });
     // duomenu slepimas/rodymas
@@ -75,7 +75,7 @@ $(document).ready(function () {
         $("#list").empty();
     });
     $("#showArray").click(function () {
-        if(data.length==0){
+        if (data.length == 0) {
             alert("Duomenu nėra!")
         }
         $("#list").empty();
@@ -86,9 +86,9 @@ $(document).ready(function () {
 
     //duomenu istrynimas
 
-    $("#clearArray").click(function(){
+    $("#clearArray").click(function () {
         alert("Duomenys bus ištrinti!")
-        data.splice(0,data.length);
+        data.splice(0, data.length);
         $("#list").empty();
     })
 
@@ -96,22 +96,67 @@ $(document).ready(function () {
 
 //dropdown
 
-$(document).ready(function(){
-$("#menuMain").hover(function(){
-    $("#main").toggleClass("show");
+$(document).ready(function () {
+    $("#menuMain").hover(function () {
+        $("#main").toggleClass("show");
+
+    });
+    $("#aboutMenu").hover(function () {
+        $("#about").toggleClass("show");
+
+    });
+    $("#contactsMenu").hover(function () {
+        $("#contacts").toggleClass("show");
+
+    });
+    $("#formMenu").hover(function () {
+        $("#dataForm").toggleClass("show");
+
+    });
+});
+
+
+$(document).ready(function () {
+    const names = [
+        "Petras",
+        "Jonas",
+        "Antanas"
+    ];
+
+    const lastNames = [
+        "Petrauskas",
+        "Jonauskas",
+        "Antanauskas"
+    ];
+
+    const age = [
+        21,
+        32,
+        56
+
+    ];
+
+    // let tr =("<tr><td>"+ names(names.length-1)+"</td><td>" +lastNames(lastNames.length-1))+"</td> <td>"+age(age.length-1)+"</td></tr>"
+
+
+    let header = "<tr><th>Name</th><th>lastName</th><th>Age</th></tr>"
+
+    $("#showTable").click(function () {
+        let table = $("#table");
+        if (table.is(":empty")) {
+            table.append("<table>", header);
+
+            for (i = 0; i < names.length; i++) {
+                table.append("<tr><td>" + names[i] + "</td><td>" + lastNames[i] + "</td> <td>" + age[i] + "</td></tr>");
+            }
+            table.append("</table>")
+
+        }
+
+    })
+
+
+
+
 
 });
-$("#aboutMenu").hover(function(){
-    $("#about").toggleClass("show");
-
-});
-$("#contactsMenu").hover(function(){
-    $("#contacts").toggleClass("show");
-
-});
-$("#formMenu").hover(function(){
-    $("#dataForm").toggleClass("show");
-
-});
-});
-
